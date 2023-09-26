@@ -9,10 +9,6 @@
  * solution('abc', 'd') // returns false
  */
 
-const solution = (phrase, endWith) => {
-    const lastLetters = phrase.slice(phrase.length - endWith.length)
-
-    return !!lastLetters.includes(endWith);
-}
+const solution = (phrase, endWith) => phrase.endsWith(endWith)
 
 module.exports = solution
